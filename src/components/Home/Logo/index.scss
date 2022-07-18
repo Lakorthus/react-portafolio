@@ -32,7 +32,12 @@
       border-radius: 50%;
       stroke: #ffd700;
       stroke-width: 10;
+      border: 4px outset #ffd700;
     }
+    &:hover {
+      animation: rubberBand 1s;
+    }
+    
   }
   
   // .svg-container {
