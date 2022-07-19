@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import {
-  faAngular,
   faCss3,
   faGitAlt,
   faHtml5,
@@ -18,7 +17,7 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    return setTimeout(() => {
+      setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
