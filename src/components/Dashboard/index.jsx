@@ -7,10 +7,10 @@ import Login from '../Login';
 const Dashboard = () => {
 
     const [user, setUser] = useState(null);
-    const auth = getAuth();
+    // const auth = getAuth();
 
     useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
+        onAuthStateChanged(getAuth(), (user) => {
             if(user) {
                 setUser(user);
             } else {
@@ -18,7 +18,6 @@ const Dashboard = () => {
             }
         })
     }, []);
-
 
     return (
        <div>
