@@ -1,3 +1,4 @@
+import React from 'react'
 import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

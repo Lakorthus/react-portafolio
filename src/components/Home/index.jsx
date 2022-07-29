@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
@@ -28,7 +29,7 @@ const Home = () => {
   ]
 
   useEffect(() => {
-    return setTimeout(() => {
+      setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
