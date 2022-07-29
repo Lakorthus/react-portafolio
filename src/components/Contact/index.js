@@ -1,4 +1,3 @@
-import React from 'react'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
@@ -12,7 +11,7 @@ const Contact = () => {
   const form = useRef()
 
   useEffect(() => {
-      setTimeout(() => {
+    return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
@@ -22,10 +21,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_0omhsj5',
-        'template_irx9d1t',
+        'gmail',
+        'template_YeJhZkgb',
         form.current,
-        'N5zb-vsh7DJFTEJQG'
+        'your-token'
       )
       .then(
         () => {
@@ -35,8 +34,8 @@ const Contact = () => {
         () => {
           alert('Failed to send the message, please try again')
         }
-      );
-  };
+      )
+  }
 
   return (
     <>
@@ -89,19 +88,19 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Julio Velezmoro,
+          London,
           <br />
           United Kingdom
           <br />
-          SE26 
+          Forest Hill <br />
+          
           <br />
-          <br />
-          <span>julio28ve@gmail.com</span>
+          <span>lakorthus@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[51.4398, -0.0546]} zoom={14}>
+          <MapContainer center={[44.96366, 19.61045]} zoom={10}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[51.4419163, -0.0397887]}>
+            <Marker position={[44.96366, 19.61045]}>
               <Popup>Julio lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>

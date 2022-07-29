@@ -49,7 +49,7 @@
     box-shadow: 0 0 20px 0px #dd0031;
   }
   .face4 {
-    transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
     color: #5ed4f4;
     box-shadow: 0 0 20px 0px #f06529;
   }
@@ -59,7 +59,7 @@
     box-shadow: 0 0 20px 0px #ec4d28;
   }
   .face6 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(100px);
     color: #ec4d28;
     box-shadow: 0 0 20px 0px #efd81d;
   }
